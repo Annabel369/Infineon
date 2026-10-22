@@ -18,39 +18,61 @@ To add support for Infineon AURIX and ESP32 boards in your Arduino IDE, follow t
      ```
 
    * **To install BOTH ESP32 and Infineon AURIX Boards:**
-     Separate multiple URLs with a comma `,` (or add them on new lines in the multi-URL window):
+     Separate multiple URLs with a comma `,`:
      ```text
      [https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json), [https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json](https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json)
      ```
 
 4. Click **OK** to save the preferences.
 5. Open the **Boards Manager** by navigating to **Tools > Board > Boards Manager...** (or click the Boards Manager icon on the left sidebar).
-6. Search for:
-   * **`Infineon`** or **`AURIX`** and click **Install** for *Infineon AURIX TriCore Boards*.
-   * **`esp32`** and click **Install** for *esp32 by Espressif Systems*.
+6. Search for **`Infineon`** or **`AURIX`** and click **Install**.
+
+---
+---
+
+# [BR] Placas Infineon AURIX TriCore para Arduino
+
+Suporte para placas baseadas na arquitetura **Infineon AURIX™ TriCore™** (como a **ShieldBuddy TC375** e kits de desenvolvimento compatíveis) e dispositivos **ESP32** na Arduino IDE.
 
 ---
 
-## Supported Hardware
+## [BR] Instalação via Gerenciador de Placas (Boards Manager)
 
-* **Infineon Core:** ShieldBuddy TC375 (AURIX™ TC375 TriCore™ architecture)
-* **ESP32 Core:** Standard ESP32, ESP32-S, ESP32-C, and ESP32-H series modules
+Para adicionar o suporte a estas placas no seu Arduino IDE, siga os passos abaixo:
+
+1. Abra a **Arduino IDE**.
+2. Vá em **Arquivo > Preferências** (File > Preferences).
+3. No campo **URLs Adicionais de Gerenciadores de Placas**, cole o link de índice:
+
+   * **Apenas para placas Infineon AURIX:**
+     ```text
+     [https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json](https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json)
+     ```
+
+   * **Para instalar AMBAS (ESP32 e Infineon AURIX):**
+     Separe os dois links por uma vírgula `,`:
+     ```text
+     [https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json), [https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json](https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json)
+     ```
+
+4. Clique em **OK** para salvar.
+5. Abra o **Gerenciador de Placas** em **Ferramentas > Placa > Gerenciador de Placas...** (ou clique no ícone do Gerenciador na barra lateral esquerda).
+6. Pesquise por **`Infineon`** ou **`AURIX`** e clique em **Instalar**.
+
+<p center="align">
+  <img width="310" height="631" alt="Gerenciador de Placas Infineon" src="https://github.com/user-attachments/assets/922ee816-6729-4ad6-9c62-a895b6ed0ada" />
+  <img width="310" height="631" alt="Instalação do pacote Infineon AURIX" src="https://github.com/user-attachments/assets/8cbc4a34-6f56-4e62-9c5d-5cbea03a783c" />
+</p>
 
 ---
 
-## Repository Structure
+## Hardware Suportado / Supported Hardware
 
-* `package.json` — Custom index file for the Infineon AURIX core release.
-* `variants/shieldbuddy_tc375/` — Physical pin mappings and hardware descriptors (`variant.h` / `variant.cpp`).
-* `boards.txt` & `platform.txt` — Core hardware parameters and compiler toolchain configurations.
+* **Infineon Core:** ShieldBuddy TC375 (Arquitetura AURIX™ TC375 TriCore™)
+* **ESP32 Core:** Módulos das séries ESP32, ESP32-S, ESP32-C e ESP32-H
 
 ---
 
-<img width="310" height="631" alt="image" src="https://github.com/user-attachments/assets/922ee816-6729-4ad6-9c62-a895b6ed0ada" />
+## Licença / License
 
-<img width="310" height="631" alt="image" src="https://github.com/user-attachments/assets/8cbc4a34-6f56-4e62-9c5d-5cbea03a783c" />
-
-## License
-
-Distributed under the open-source license for embedded systems development.
-
+Distribuído sob licença aberta para desenvolvimento de sistemas embarcados.
