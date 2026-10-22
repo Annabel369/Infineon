@@ -1,18 +1,52 @@
-# Infineon AURIX TriCore Boards for Arduino
+# Infineon AURIX TriCore & ESP32 Boards for Arduino
 
-Suporte oficial para placas baseadas na arquitetura Infineon AURIX (como a **ShieldBuddy TC375** e kits de desenvolvimento compatíveis) na Arduino IDE.
+Support for boards based on the **Infineon AURIX™ TriCore™** architecture (such as the **ShieldBuddy TC375** and compatible development kits) alongside **ESP32** devices in the Arduino IDE.
 
-## Instalação via Gerenciador de Placas (Boards Manager)
+---
 
-Para adicionar o suporte a estas placas no seu Arduino IDE:
+## Installation via Boards Manager
 
-1. Abra a **Arduino IDE**.
-2. Vá em **Arquivo > Preferências** (File > Preferences).
-3. No campo **URLs Adicionais de Gerenciadores de Placas**, cole o link RAW do arquivo `package_aurix_index.json` deste repositório:
-   ```text
-   [https://raw.githubusercontent.com/Annabel369/Infineon/main/package_aurix_index.json](https://raw.githubusercontent.com/Annabel369/Infineon/main/package_aurix_index.json)
+To add support for Infineon AURIX and ESP32 boards in your Arduino IDE, follow these steps:
 
-<img width="310" height="631" alt="image" src="https://github.com/user-attachments/assets/922ee816-6729-4ad6-9c62-a895b6ed0ada" />
+1. Open the **Arduino IDE**.
+2. Go to **File > Preferences** (or press `Ctrl + ,`).
+3. In the **Additional Boards Manager URLs** field, add the index URL(s):
 
-<img width="310" height="631" alt="image" src="https://github.com/user-attachments/assets/8cbc4a34-6f56-4e62-9c5d-5cbea03a783c" />
+   * **To install Infineon AURIX Boards only:**
+     ```text
+     [https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json](https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json)
+     ```
+
+   * **To install BOTH ESP32 and Infineon AURIX Boards:**
+     Separate multiple URLs with a comma `,` (or add them on new lines in the multi-URL window):
+     ```text
+     [https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json), [https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json](https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json)
+     ```
+
+4. Click **OK** to save the preferences.
+5. Open the **Boards Manager** by navigating to **Tools > Board > Boards Manager...** (or click the Boards Manager icon on the left sidebar).
+6. Search for:
+   * **`Infineon`** or **`AURIX`** and click **Install** for *Infineon AURIX TriCore Boards*.
+   * **`esp32`** and click **Install** for *esp32 by Espressif Systems*.
+
+---
+
+## Supported Hardware
+
+* **Infineon Core:** ShieldBuddy TC375 (AURIX™ TC375 TriCore™ architecture)
+* **ESP32 Core:** Standard ESP32, ESP32-S, ESP32-C, and ESP32-H series modules
+
+---
+
+## Repository Structure
+
+* `package.json` — Custom index file for the Infineon AURIX core release.
+* `variants/shieldbuddy_tc375/` — Physical pin mappings and hardware descriptors (`variant.h` / `variant.cpp`).
+* `boards.txt` & `platform.txt` — Core hardware parameters and compiler toolchain configurations.
+
+---
+
+## License
+
+Distributed under the open-source license for embedded systems development.
 
