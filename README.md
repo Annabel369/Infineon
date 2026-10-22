@@ -46,6 +46,10 @@ To add support for Infineon AURIX and ESP32 boards in your Arduino IDE, follow t
 
 ---
 
+<img width="310" height="631" alt="image" src="https://github.com/user-attachments/assets/922ee816-6729-4ad6-9c62-a895b6ed0ada" />
+
+<img width="310" height="631" alt="image" src="https://github.com/user-attachments/assets/8cbc4a34-6f56-4e62-9c5d-5cbea03a783c" />
+
 ## License
 
 Distributed under the open-source license for embedded systems development.
