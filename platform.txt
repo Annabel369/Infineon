@@ -1,0 +1,24 @@
+# Definições básicas da plataforma AURIX TriCore
+name=Infineon AURIX TriCore Boards
+version=1.0.0
+build.arch=tricore
+
+# Ferramentas de compilação (Toolchain)
+compiler.path={runtime.tools.tricore-gcc.path}/bin/
+compiler.c.cmd=tricore-elf-gcc
+compiler.cpp.cmd=tricore-elf-g++
+compiler.ar.cmd=tricore-elf-ar
+compiler.elf.cmd=tricore-elf-g++
+compiler.s.cmd=tricore-elf-gcc
+
+# Flags de compilação para a arquitetura TriCore (ex: TC37x)
+compiler.c.flags=-c -Os -g -Wall -Wextra -std=gnu99 -mmcu=tc37x
+compiler.cpp.flags=-c -Os -g -Wall -Wextra -std=gnu++11 -mmcu=tc37x
+compiler.ar.flags=rcs
+compiler.elf.flags=-mmcu=tc37x -nostartfiles
+
+# Padrões de compilação do Arduino IDE
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.c.flags} -I"{build.core.path}/include" -I"{build.variant.path}" "{source_file}" -o "{object_file}"
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} -I"{build.core.path}/include" -I"{build.variant.path}" "{source_file}" -o "{object_file}"
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} "{archive_file_path}" "{object_file}"
+recipe.c.combine.pattern="{compiler.path}{compiler.elf.cmd}" {compiler.elf.flags} -o "{build.path}/{build.project_name}.elf" {object_files} "{archive_file_path}"
