@@ -1,5 +1,17 @@
 # Infineon AURIX TriCore & ESP32 Boards for Arduino
 
+# 1. Download the Linux toolchain (~436 MB)
+    wget -O /tmp/tricore-gcc.tar.gz \
+    https://github.com/NoMore201/tricore-gcc-toolchain/releases/download/13.4.1/tricore-gcc-13.4.1-linux.tar.gz
+# 2. Create the target directory
+    mkdir -p ~/.arduino15/packages/infineon_tricore/tools/tricore-gcc/1.0.0/
+# 3. Extract into it
+    tar -xzf /tmp/tricore-gcc.tar.gz -C ~/.arduino15/packages/infineon_tricore/tools/tricore-gcc/1.0.0/ --strip-components=1
+# 4. Verify
+    ~/.arduino15/packages/infineon_tricore/tools/tricore-gcc/1.0.0/bin/tricore-elf-g++ --version
+# 5. Clean up
+    rm /tmp/tricore-gcc.tar.gz
+
 Support for boards based on the **Infineon AURIX™ TriCore™** architecture (such as the **ShieldBuddy TC375** and compatible development kits) alongside **ESP32** devices in the Arduino IDE.
 
 ---
