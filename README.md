@@ -12,9 +12,23 @@
 # 5. Clean up
     rm /tmp/tricore-gcc.tar.gz
 
-Support for boards based on the **Infineon AURIX™ TriCore™** architecture (such as the **ShieldBuddy TC375** and compatible development kits) alongside **ESP32** devices in the Arduino IDE.
 
----
+    Correções aplicadas
+    1. Toolchain instalado
+    Baixei e extraí o TriCore GCC 13.4.1 (open-source, NoMore201) em: ~/.arduino15/packages/Infineon/tools/tricore-gcc/1.0.0/bin/
+    2. Flag do compilador corrigida no 
+    platform.txt
+    ❌ Antes: -mmcu=tc37x (flag do HighTec proprietário — não reconhecida)
+    ✅ Depois: -mcpu=tc39xx (flag correta para o toolchain open-source, compatível com TC375)
+
+    Support for boards based on the **Infineon AURIX™ TriCore™** architecture (such as the **ShieldBuddy TC375** and compatible development kits) alongside **ESP32** devices in the Arduino IDE.
+    ✨ astral@debian:~/Downloads$ ~/.arduino15/packages/infineon_tricore/tools/tricore-gcc/1.0.0/bin/tricore-elf-g++ --version
+    tricore-elf-g++ (tricore-gcc-toolchain) 13.4.1 20260422
+    Copyright (C) 2023 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+    ---
 
 ## Installation via Boards Manager
 
