@@ -1,5 +1,16 @@
 # Infineon AURIX TriCore & ESP32 Boards for Arduino
 
+<img width="1331" height="582" alt="image" src="https://github.com/user-attachments/assets/81b5d109-c4b5-4cdd-81c2-0b704698d7a9" />
+
+    /home/astral/.arduino15/packages/Infineon
+
+    <img width="1521" height="737" alt="image" src="https://github.com/user-attachments/assets/e77b83ca-cdfd-40aa-bbab-43a81a3defb1" />
+
+    <img width="1521" height="737" alt="image" src="https://github.com/user-attachments/assets/98323d30-3fe9-4725-9eed-6c8b2e41d186" />
+
+
+
+
 # 1. Download the Linux toolchain (~436 MB)
     wget -O /tmp/tricore-gcc.tar.gz \
     https://github.com/NoMore201/tricore-gcc-toolchain/releases/download/13.4.1/tricore-gcc-13.4.1-linux.tar.gz
