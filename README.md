@@ -8,6 +8,12 @@
 <img width="1521" height="737" alt="image" src="https://github.com/user-attachments/assets/2e4a0284-19bb-4517-9f1b-159c1f98f35f" />
 
 
+<img width="1096" height="177" alt="image" src="https://github.com/user-attachments/assets/efd4491e-35fd-462a-85e2-6317e4fb7603" />
+
+sha256sum Infineon-1.0.1.tar.gz
+
+stat -c%s Infineon-1.0.1.tar.gz
+
 
     https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json
     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
