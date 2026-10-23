@@ -23,11 +23,11 @@ stat -c%s Infineon-1.0.1.tar.gz
     wget -O /tmp/tricore-gcc.tar.gz \
     https://github.com/NoMore201/tricore-gcc-toolchain/releases/download/13.4.1/tricore-gcc-13.4.1-linux.tar.gz
 # 2. Create the target directory
-    mkdir -p ~/.arduino15/packages/Infineon/tools/tricore-gcc/1.0.0/
+    mkdir -p ~/.arduino15/packages/infineon/tools/tricore-gcc/1.0.0/
 # 3. Extract into it
-    tar -xzf /tmp/tricore-gcc.tar.gz -C ~/.arduino15/packages/Infineon/tools/tricore-gcc/1.0.0/ --strip-components=1
+    tar -xzf /tmp/tricore-gcc.tar.gz -C ~/.arduino15/packages/infineon/tools/tricore-gcc/1.0.0/ --strip-components=1
 # 4. Verify
-    ~/.arduino15/packages/Infineon/tools/tricore-gcc/1.0.0/bin/tricore-elf-g++ --version
+    ~/.arduino15/packages/infineon/tools/tricore-gcc/1.0.0/bin/tricore-elf-g++ --version
 # 5. Clean up
     rm /tmp/tricore-gcc.tar.gz
 
