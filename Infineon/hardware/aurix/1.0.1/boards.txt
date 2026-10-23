@@ -1,0 +1,15 @@
+# Definição da placa AURIX TC375
+shieldbuddy.name=Infineon ShieldBuddy TC375
+
+# Ferramentas e limites de memória
+shieldbuddy.upload.tool=aurix_programmer
+shieldbuddy.upload.maximum_size=4194304
+shieldbuddy.upload.maximum_data_size=262144
+
+# Parâmetros de compilação
+shieldbuddy.build.mcu=tc37x
+shieldbuddy.build.f_cpu=300000000L
+shieldbuddy.build.arch=TRICORE
+shieldbuddy.build.board=AVR_SHIELDBUDDY
+shieldbuddy.build.core=arduino
+shieldbuddy.build.variant=shieldbuddy_tc375

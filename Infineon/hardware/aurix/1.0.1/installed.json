@@ -1,0 +1,40 @@
+{
+  "packages": [
+    {
+      "name": "Infineon",
+      "maintainer": "Annabel369",
+      "websiteUrl": "https://github.com/Annabel369/Infineon",
+      "url": "https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json",
+      "email": "",
+      "platforms": [
+        {
+          "name": "Infineon AURIX TriCore Boards",
+          "architecture": "tricore",
+          "version": "1.0.0",
+          "deprecated": false,
+          "category": "Contributed",
+          "url": "https://github.com/Annabel369/Infineon/releases/download/v1.0.0/aurix-1.0.0.tar.gz",
+          "archiveFileName": "aurix-1.0.0.tar.gz",
+          "checksum": "SHA-256:5d73dd006c9c7332b442f822f7c48c75776ae8ecab5d68cde464ffb7b62933f7",
+          "size": "2322",
+          "boards": [
+            {
+              "name": "Infineon ShieldBuddy TC375"
+            }
+          ],
+          "help": {},
+          "toolsDependencies": [],
+          "discoveryDependencies": [],
+          "monitorDependencies": [],
+          "libraryDependencies": []
+        }
+      ],
+      "tools": [],
+      "help": {
+        "online": "https://github.com/Annabel369/Infineon/issues"
+      }
+    }
+  ],
+  "IsTrusted": false,
+  "version": 2
+}
