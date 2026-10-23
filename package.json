@@ -15,8 +15,8 @@
           "category": "Contributed",
           "url": "https://github.com/Annabel369/Infineon/archive/refs/tags/v1.0.1.tar.gz",
           "archiveFileName": "v1.0.1.tar.gz",
-          "checksum": "SHA-256:5d73dd006c9c7332b442f822f7c48c75776ae8ecab5d68cde464ffb7b62933f7",
-          "size": "2322",
+          "checksum": "SHA-256:962d66b6b3092f187e91b22582141559328280ed5c8f68937ebc9d89bccd2f3a",
+          "size": "17033",
           "boards": [
             {
               "name": "Infineon ShieldBuddy TC375"
@@ -44,8 +44,8 @@
               "host": "x86_64-pc-linux-gnu",
               "url": "https://github.com/NoMore201/tricore-gcc-toolchain/releases/download/13.4.1/tricore-gcc-13.4.1-linux.tar.gz",
               "archiveFileName": "tricore-gcc-13.4.1-linux.tar.gz",
-              "checksum": "SHA-256:0000000000000000000000000000000000000000000000000000000000000000",
-              "size": "457179648"
+              "checksum": "SHA-256:22dbe2fc5195a24736b0b091a2f53f609ad0f6a35b45bfa8db8c2176c28f9a70",
+              "size": "436111398"
             }
           ]
         }
