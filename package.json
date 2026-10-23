@@ -11,12 +11,12 @@
         {
           "name": "Infineon AURIX TriCore Boards",
           "architecture": "tricore",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/Annabel369/Infineon/releases/download/v1.0.1/Infineon-1.0.1.tar.gz",
-          "archiveFileName": "Infineon-1.0.1.tar.gz",
-          "checksum": "SHA-256:dd5776a27748684a4f7dd65c44ea2249f6f351c26f6911f0b5981338940d209a",
-          "size": "17032",
+          "url": "https://github.com/Annabel369/Infineon/releases/download/v1.0.0/aurix-1.0.0.tar.gz",
+          "archiveFileName": "aurix-1.0.0.tar.gz",
+          "checksum": "SHA-256:b284c2a69478a1ea4771f089ea5392d0508f808bf17646e3ef8bba7384809383",
+          "size": "16867",
           "boards": [
             {
               "name": "Infineon ShieldBuddy TC375"
@@ -28,4 +28,3 @@
     }
   ]
 }
-
