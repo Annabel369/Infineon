@@ -12,10 +12,11 @@ compiler.elf.cmd=tricore-elf-g++
 compiler.s.cmd=tricore-elf-gcc
 
 # Flags de compilação para a arquitetura TriCore (ex: TC37x)
-compiler.c.flags=-c -Os -g -Wall -Wextra -std=gnu99 -mmcu=tc37x
-compiler.cpp.flags=-c -Os -g -Wall -Wextra -std=gnu++11 -mmcu=tc37x
+# Nota: toolchain open-source usa -mcpu=tc39xx (não -mmcu=tc37x)
+compiler.c.flags=-c -Os -g -Wall -Wextra -std=gnu99 -mcpu=tc39xx
+compiler.cpp.flags=-c -Os -g -Wall -Wextra -std=gnu++11 -mcpu=tc39xx
 compiler.ar.flags=rcs
-compiler.elf.flags=-mmcu=tc37x -nostartfiles
+compiler.elf.flags=-mcpu=tc39xx -nostartfiles
 
 # Padrões de compilação do Arduino IDE
 recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.c.flags} -I"{build.core.path}/include" -I"{build.variant.path}" "{source_file}" -o "{object_file}"
