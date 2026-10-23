@@ -3,28 +3,58 @@
     {
       "name": "Infineon",
       "maintainer": "Annabel369",
-      "websiteURL": "https://github.com/Annabel369/Infineon",
-      "help": {
-        "online": "https://github.com/Annabel369/Infineon/issues"
-      },
+      "websiteUrl": "https://github.com/Annabel369/Infineon",
+      "url": "https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json",
+      "email": "",
       "platforms": [
         {
           "name": "Infineon AURIX TriCore Boards",
           "architecture": "tricore",
-          "version": "1.0.1",
+          "version": "v1.0.1",
+          "deprecated": false,
           "category": "Contributed",
-          "url": "https://github.com/Annabel369/Infineon/releases/download/v1.0.1/aurix-1.0.1.tar.gz",
-          "archiveFileName": "aurix-1.0.1.tar.gz",
-          "checksum": "SHA-256:b284c2a69478a1ea4771f089ea5392d0508f808bf17646e3ef8bba7384809383",
-          "size": "16867",
+          "url": "https://github.com/Annabel369/Infineon/archive/refs/tags/v1.0.1.tar.gz",
+          "archiveFileName": "v1.0.1.tar.gz",
+          "checksum": "SHA-256:962d66b6b3092f187e91b22582141559328280ed5c8f68937ebc9d89bccd2f3a",
+          "size": "17033",
           "boards": [
             {
               "name": "Infineon ShieldBuddy TC375"
             }
           ],
-          "toolsDependencies": []
+          "help": {},
+          "toolsDependencies": [
+            {
+              "packager": "Infineon",
+              "name": "tricore-gcc",
+              "version": "1.0.0"
+            }
+          ],
+          "discoveryDependencies": [],
+          "monitorDependencies": [],
+          "libraryDependencies": []
         }
-      ]
+      ],
+      "tools": [
+        {
+          "name": "tricore-gcc",
+          "version": "1.0.0",
+          "systems": [
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/NoMore201/tricore-gcc-toolchain/releases/download/13.4.1/tricore-gcc-13.4.1-linux.tar.gz",
+              "archiveFileName": "tricore-gcc-13.4.1-linux.tar.gz",
+              "checksum": "SHA-256:22dbe2fc5195a24736b0b091a2f53f609ad0f6a35b45bfa8db8c2176c28f9a70",
+              "size": "436111398"
+            }
+          ]
+        }
+      ],
+      "help": {
+        "online": "https://github.com/Annabel369/Infineon/issues"
+      }
     }
-  ]
+  ],
+  "IsTrusted": false,
+  "version": 2
 }
