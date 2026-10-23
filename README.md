@@ -5,9 +5,12 @@
     /home/astral/.arduino15/packages/Infineon
 <img width="1521" height="737" alt="image" src="https://github.com/user-attachments/assets/e77b83ca-cdfd-40aa-bbab-43a81a3defb1" />
 
-<img width="1521" height="737" alt="image" src="https://github.com/user-attachments/assets/98323d30-3fe9-4725-9eed-6c8b2e41d186" />
+<img width="1521" height="737" alt="image" src="https://github.com/user-attachments/assets/2e4a0284-19bb-4517-9f1b-159c1f98f35f" />
 
 
+
+    https://raw.githubusercontent.com/Annabel369/Infineon/main/package.json
+    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 
 # 1. Download the Linux toolchain (~436 MB)
